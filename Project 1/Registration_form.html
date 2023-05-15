@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Page_style.css">
+</head>
+<body>
+    <h1> REGISTRATIN FORM</h1>
+    <div class="registration_form">
+        <!-- the scritp.php is the location to send the information of the submited form, while the post method is used to send it securely-->
+    <form action="script.php" method="post">
+        <!-- Form to take  text values from a box-->
+        <div>
+        <label  for="first_name"> First Name: </label>
+        <input type="text" name="first_name" placeholder="Input your first name" required>
+
+        <label  for="last_name"> Last Name: </label>
+        <input type="text" name="last_name" placeholder="Input your last name" required>
+   
+    </div>
+           <!-- Form to click options in dot from a buttion-->
+    <div>
+        <label  for="gender_male"> Male </label>
+        <input type="radio" name="gender_choice" value="choice-1">
+
+        <label  for="gender_female"> Female </label>
+        <input type="radio" name="gender_choice" value="choice-2">
+
+        <label  for="gender_others"> Others </label>
+        <input type="radio" name="gender_choice" value="choice-3">
+    </div>
+    <div>
+        <!-- Form to collect users email from a text-->
+        <label for="email"> Email:</label>
+        <input type="text" name="email" placeholder="email_name@email.com" required>
+
+         <!-- Form to collect users password from a text-->
+         <label for="password"> Password</label>
+         <input type="password" name="password">
+
+    </div>
+    <div>
+         <!-- Form to select from list of defined pre-defined options i.e bithday dates, months --> 
+         <label for="Month">Birthday </label>
+         <select name="Month"> 
+            <option value="0" selected disabled> Months </option>
+             <option value="Jan"> January </option>
+             <option value="Feb"> Febuary</option>
+             <option value="Mar"> March</option>
+             <option value="Apr"> April</option>
+             <option value="May"> May</option>
+             <option value="Jun"> June </option>
+             <option value="Jul"> July</option>
+             <option value="Aug"> August</option>
+             <option value="Sep"> September</option>
+             <option value="Oct"> October</option>
+             <option value="Nov">November </option>
+             <option value="Dec"> December</option>
+         </select>
+         <select name="Month"> 
+            <option value="0" selected disabled> Days </option>
+             <option value="1"> 1 </option>
+             <option value="2"> 2</option>
+             <option value="3"> 3</option>
+             <option value="4"> 4</option>
+             <option value="5"> 5</option>
+             <option value="6"> 6 </option>
+             <option value="7"> 7</option>
+             <option value="8"> 8</option>
+             <option value="9"> 9</option>
+             <option value="10"> 10</option>
+             <option value="11">11 </option>
+             <option value="12"> 12</option>
+             <option value="10"> 10</option>
+             <option value="11">13 </option>
+             <option value="14"> 14</option>
+             <option value="15"> 15</option>
+             <option value="16">16 </option>
+             <option value="17"> 17</option>
+             <option value="18"> 18</option>
+             <option value="19">19</option>
+             <option value="20"> 20</option>
+             <option value="21"> 21</option>
+             <option value="22">22</option>
+             <option value="23"> 23</option>
+             <option value="24"> 24</option>
+             <option value="25"> 25</option>
+             <option value="26">26</option>
+             <option value="27"> 27</option>
+             <option value="28"> 28</option>
+             <option value="29">29</option>
+             <option value="30"> 30</option>
+             <option value="31"> 31</option>
+         </select>
+       
+
+         <!-- form to confirm that a user accept all information placed using a check box-->
+         <label  for="agree"> I agree to all the conditions </label>
+         <input type="checkbox" name="agree" required>
+             <!-- Button to Submit a form by user-->
+         <button type="submit"> Submit</button>
+
+    
+       
+    </div>
+
+    </form>
+</div>
+</body>
+</html>
