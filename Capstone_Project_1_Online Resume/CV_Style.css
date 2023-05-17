@@ -1,0 +1,21 @@
+img {
+
+height: 150px;
+width: 150px;
+border-radius: 50px;
+float: left;
+}
+h1 {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+header p {
+    text-align: center;
+}
+main p {
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+}
